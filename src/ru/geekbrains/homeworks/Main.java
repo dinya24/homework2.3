@@ -18,6 +18,15 @@ public class Main {
         Set<String> uniq = new HashSet<>(Arrays.asList(words));
         System.out.println(uniq);
 
+        Phonebook phonebook = new Phonebook();
+
+        phonebook.add("Ivan","88005553551");
+        phonebook.add("Stas","88005553552");
+        phonebook.add("Semen","88005553553");
+        phonebook.add("Ivan","88005553554");
+
+        System.out.println(phonebook.get("Ivan"));
+
 
     }
 }
